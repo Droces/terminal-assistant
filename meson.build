@@ -1,6 +1,6 @@
 # Project name, programming language and version
 project (
-    'com.github.terminal-assistant',
+    'com.github.droces.terminal-assistant',
     'vala', 'c',
     version: '0.0.1'
 )
@@ -22,7 +22,7 @@ dependencies = [
 
 subdir ('src')
 
-# Executable
+# Create a new executable, list the files we want to compile, list the dependencies we need, and install
 executable (
     meson.project_name (),
     sources,
@@ -34,3 +34,17 @@ subdir ('data')
 subdir ('po')
 
 meson.add_install_script ('meson/post_install.py')
+
+# Install the .desktop file so the Applications Menu will see it
+install_data(
+    join_paths('data', meson.project_name () + '.desktop.in'),
+    install_dir: join_paths(get_option('datadir'), 'applications'),
+    rename: meson.project_name() + '.desktop'
+)
+
+# Install the .appdata.xml file so AppCenter will see it
+install_data(
+    join_paths('data', meson.project_name () + '.appdata.xml.in'),
+    install_dir: join_paths(get_option('datadir'), 'metainfo'),
+    rename: meson.project_name() + '.appdata.xml'
+)

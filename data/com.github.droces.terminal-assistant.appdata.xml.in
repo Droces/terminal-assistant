@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2020 Dane Rossenroe <droces@gmail.com> -->
+<component type="desktop">
+  <id>com.github.terminal-assistant</id>
+  <metadata_license>CC0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <name>Terminal Assistant</name>
+  <summary>Tnteractive documentation for Terminal</summary>
+  <description>
+    <p>Provides interactive documentation for the Terminal in elementary OS.</p>
+  </description>
+  <provides>
+    <binary>com.github.terminal-assistant</binary>
+  </provides>
+  <developer_name>Dane Rossenrode</developer_name>
+  <url type="homepage">https://touchdreams.co.za</url>
+  <url type="bugtracker">https://github.com/Droces//terminal-assistant/issues</url>
+  <url type="help">https://github.com/Droces//terminal-assistant/issues</url>
+  <screenshots>
+    <screenshot type="default">
+    </screenshot>
+  </screenshots>
+  <releases>
+    <rel8ease version="0.0.1" date="2020-01-01"/>
+  </releases>
+  <custom>
+    <value key="x-appcenter-color-primary">#df9d1c</value>
+    <value key="x-appcenter-color-primary-text">rgb(255, 255, 255)</value>
+    <value key="x-appcenter-suggested-price">1</value>
+  </custom>
+</component>

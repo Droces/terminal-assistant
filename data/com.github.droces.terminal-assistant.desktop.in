@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=terminal-assistant
+GenericName=Terminal Assisntant
+Comment=Provides interactive documentation for the Terminal in elementary OS
+Exec=com.github.terminal-assistant %U
+Icon=com.github.terminal-assistant
+Terminal=false
+Categories=Utility;GTK;Development;
+Keywords=Terminal,Development

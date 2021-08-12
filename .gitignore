@@ -1,0 +1,2 @@
+# Ignore Meson's build directory
+build

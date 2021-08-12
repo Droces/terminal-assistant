@@ -1,0 +1,9 @@
+{
+  "title": "Basic information commands",
+  "commands": [
+    {
+      "label": "ls",
+      "description": "List directory contents (files and directories)"
+    }
+  ]
+}
